@@ -63,6 +63,16 @@ button:focus {
   font-size: 2.5rem;
   margin: 1rem 0;
 }
+
+.description-box {
+  display: flex;
+  gap: 20px;
+}
+
+.description-box p {
+  flex: 1;
+}
+
 .description {
   font-size: 1.5rem;
   margin: 0.5rem 0;
@@ -99,10 +109,10 @@ button:focus {
   padding: 8px 16px;
 }
 .header__menu__item:hover {
-  border-bottom: 1px solid var(--color-accent);
+  border-bottom: 1px solid var(--color-accent-variant);
 }
 .header__menu__item:active {
-  border: 1px solid var(--color-accent);
+  border: 1px solid var(--color-accent-variant);
   border-radius: 4px;
 }
 
@@ -118,7 +128,7 @@ button:focus {
   width: 250px;
   height: 250px;
   border-radius: 100%;
-  border: 3px solid var(--color-accent);
+  border: 3px solid var(--color-accent-variant);
   object-fit: cover; /* 이미지가 부모 요소의 크기에 맞춰 비율을 유지하면서 꽉 차도록 설정*/
 }
 
@@ -128,7 +138,7 @@ button:focus {
 }
 
 .home__title--string {
-  color: var(--color-accent);
+  color: var(--color-accent-variant);
 }
 
 .home__description {
@@ -137,7 +147,7 @@ button:focus {
 
 .home__contact {
   display: inline-block;
-  background-color: var(--color-accent);
+  background-color: var(--color-accent-variant);
   color: var(--color-black);
   margin: 2rem;
   padding: 0.5rem 1rem;
@@ -148,7 +158,7 @@ button:focus {
 .home__contact:hover {
   background-color: transparent;
   color: var(--color-text);
-  outline: 2px solid var(--color-accent);
+  outline: 2px solid var(--color-accent-variant);
 }
 
 /* about */
@@ -170,7 +180,7 @@ button:focus {
 .skill__icon {
   font-size: 4rem;
   margin: 1rem 0;
-  color: var(--color-accent);
+  color: var(--color-accent-variant);
   transition: all 300ms ease;
 }
 
@@ -186,6 +196,7 @@ button:focus {
 
 .jobs {
   text-align: start; /* 언어에 따라 시작위치를 다르게 설정 */
+  margin: 0 20%;
 }
 
 .job {
@@ -195,17 +206,18 @@ button:focus {
   margin-bottom: 1rem;
 }
 .job__img {
-  width: 300px;
-  height: 200px;
+  width: 350px;
+  height: 250px;
 }
 
 .job__name {
   color: var(--color-primary);
+  font-size: 1.5rem;
 }
 
 .job__period {
   color: var(--color-primary);
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 
 /* skills */
@@ -223,7 +235,7 @@ button:focus {
 }
 
 .tools__title {
-  color: var(--color-accent);
+  color: var(--color-accent-variant);
   margin: 1rem 0;
   font-size: 1.2rem;
 }
@@ -254,7 +266,7 @@ button:focus {
 
 .bar__value {
   height: 3px;
-  background-color: var(--color-accent);
+  background-color: var(--color-accent-variant);
 }
 
 .tools__tools {
@@ -265,4 +277,31 @@ button:focus {
   padding: 1rem;
   background-color: var(--color-primary);
   filter: brightness(150%);
+}
+
+#work {
+  width: 100%;
+  align-items: center;
+}
+
+.work__title {
+  margin: 1rem 0;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.work__projects {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  font-size: 1.5rem;
+}
+
+.work__subject {
+  display: flex;
+  justify-content: center;
+}
+
+.work__subject__button {
+  font-weight: bold;
 }
